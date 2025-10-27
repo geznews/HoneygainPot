@@ -1,0 +1,132 @@
+.btmc-gold-price {
+font-family: inherit;
+color: inherit;
+margin: 1rem 0;
+}
+
+.btmc-gold-price__table {
+width: 100%;
+border-collapse: collapse;
+margin: 0;
+}
+
+.btmc-gold-price__table th,
+.btmc-gold-price__table td {
+border: 1px solid #e2e8f0;
+padding: 0.5rem 0.75rem;
+text-align: left;
+}
+
+.btmc-gold-price__table thead {
+background-color: #f8fafc;
+color: #1e293b;
+}
+
+.btmc-gold-price__value {
+font-weight: 600;
+color: #0f172a;
+}
+
+.btmc-gold-price__change {
+display: inline-block;
+font-weight: 600;
+}
+
+.btmc-gold-price__change--positive {
+color: #16a34a;
+}
+
+.btmc-gold-price__change--negative {
+color: #dc2626;
+}
+
+.btmc-gold-price__change--neutral,
+.btmc-gold-price__value--empty {
+color: #64748b;
+}
+
+.btmc-gold-price__list {
+list-style: none;
+margin: 0;
+padding: 0;
+display: grid;
+gap: 0.75rem;
+}
+
+.btmc-gold-price__list-item {
+border: 1px solid #e2e8f0;
+border-radius: 0.5rem;
+padding: 0.75rem 1rem;
+background-color: #fff;
+box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+.btmc-gold-price__item-header {
+font-weight: 700;
+margin-bottom: 0.35rem;
+}
+
+.btmc-gold-price__item-label {
+font-weight: 600;
+color: #334155;
+}
+
+.btmc-gold-price__change span + span {
+margin-left: 0.75rem;
+}
+
+.btmc-gold-price__meta {
+margin-top: 0.5rem;
+font-size: 0.875rem;
+color: #475569;
+}
+
+.btmc-gold-price__notice {
+padding: 0.75rem 1rem;
+border-radius: 0.5rem;
+margin: 0.5rem 0;
+background-color: #f1f5f9;
+border: 1px solid #cbd5f5;
+}
+
+.btmc-gold-price__notice--error {
+background-color: #fef2f2;
+border-color: #fecaca;
+color: #b91c1c;
+}
+
+.btmc-gold-price__notice--warning {
+background-color: #fffbeb;
+border-color: #fef08a;
+color: #92400e;
+}
+
+@media (max-width: 640px) {
+.btmc-gold-price__table thead {
+display: none;
+}
+
+.btmc-gold-price__table tr {
+display: block;
+border: 1px solid #e2e8f0;
+margin-bottom: 0.75rem;
+border-radius: 0.5rem;
+}
+
+.btmc-gold-price__table td {
+display: flex;
+justify-content: space-between;
+border: none;
+border-bottom: 1px solid #e2e8f0;
+}
+
+.btmc-gold-price__table td:last-child {
+border-bottom: none;
+}
+
+.btmc-gold-price__table td::before {
+content: attr(data-label);
+font-weight: 600;
+color: #334155;
+}
+}
